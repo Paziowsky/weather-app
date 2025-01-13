@@ -23,9 +23,9 @@ app.get("/weather", async (req, res) => {
       `http://api.openweathermap.org/geo/1.0/direct`,
       {
         params: {
-          q: city,
-          limit: 1,
-          appid: API_KEY,
+          q: city, // The city name, e.g., "New York"
+          limit: 1, // Get only the first matching city
+          appid: API_KEY, // Your OpenWeatherMap API key
         },
       }
     );
